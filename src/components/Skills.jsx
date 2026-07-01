@@ -71,7 +71,7 @@ const Skills = () => {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               viewport={{ once: true, margin: '-50px' }}
-              className={`group relative ${group.colSpan} ${group.bgColor} border ${group.borderColor} rounded-[2rem] p-8 md:p-10 hover:shadow-2xl transition-all duration-500 overflow-hidden flex flex-col justify-between`}
+              className={`group relative ${group.colSpan} ${group.bgColor} border ${group.borderColor} rounded-[2rem] p-8 md:p-10 hover:shadow-2xl transition-all duration-500 overflow-hidden flex flex-col justify-between will-change-transform`}
             >
               {/* Subtle hover reveal gradient */}
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-40 transition-opacity duration-500 pointer-events-none" />
@@ -89,7 +89,7 @@ const Skills = () => {
                 {group.skills.map((skill, sIdx) => (
                   <span
                     key={sIdx}
-                    className="px-4 py-2 text-sm  text-gray-700 bg-white/80 backdrop-blur-sm border border-white/40 shadow-sm rounded-xl hover:shadow-md hover:-translate-y-1 hover:text-[#ff2a2a] transition-all duration-300 cursor-default"
+                    className="px-4 py-2 text-sm text-gray-700 bg-white border border-black/5 shadow-sm rounded-xl hover:shadow-md hover:-translate-y-1 hover:text-[#ff2a2a] transition-all duration-300 cursor-default"
                   >
                     {skill}
                   </span>

@@ -77,8 +77,7 @@ const Contact = () => {
         className="absolute top-0 left-0 w-full h-full flex flex-col justify-start items-center overflow-hidden pointer-events-none z-0 pt-16 md:pt-12"
       >
         <h1 
-          className="text-[25vw] leading-[0.75]  text-white uppercase tracking-tighter select-none scale-y-[1.6] origin-top"
-          style={{ fontFamily:"'Impact', 'Arial Black', sans-serif" }}
+          className="text-[15vw] md:text-[12vw] leading-[0.8] text-white/15 uppercase tracking-tighter select-none origin-top font-black"
         >
           Contact
         </h1>
@@ -169,19 +168,22 @@ const Contact = () => {
             {/* Bottom Section */}
             <div className="flex flex-col md:flex-row gap-12 mt-4">
               {/* Left text */}
-              <label htmlFor="permission" className="flex-1 flex items-start gap-4 text-sm  text-white/90 cursor-pointer select-none">
+              <div 
+                className="flex-1 flex items-start gap-4 text-sm text-white/90 cursor-pointer select-none"
+                onClick={() => setFormData(prev => ({ ...prev, permission: !prev.permission }))}
+              >
                 <input 
                   type="checkbox" 
                   id="permission" 
                   checked={formData.permission}
-                  onChange={handleChange}
-                  className="mt-0.5 w-6 h-6 md:w-4 md:h-4 rounded-sm border-white/40 bg-transparent text-white focus:ring-white focus:ring-offset-0 focus:ring-offset-transparent cursor-pointer shrink-0" 
+                  readOnly
+                  className="mt-0.5 w-6 h-6 md:w-5 md:h-5 rounded-sm border-white/40 bg-transparent text-white focus:ring-white focus:ring-offset-0 focus:ring-offset-transparent cursor-pointer shrink-0 pointer-events-none" 
                   style={{ accentColor:"white" }}
                 />
-                <span className="max-w-[280px] leading-snug">
+                <span className="max-w-[280px] leading-snug pointer-events-none">
                   I give permission to contact me at this email address.
                 </span>
-              </label>
+              </div>
 
               {/* Right text & button */}
               <div className="flex-1 flex flex-col gap-8 text-xs text-white/70  justify-end">

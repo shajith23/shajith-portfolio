@@ -172,14 +172,13 @@ const Contact = () => {
                 className="flex-1 flex items-start gap-4 text-sm text-white/90 cursor-pointer select-none"
                 onClick={() => setFormData(prev => ({ ...prev, permission: !prev.permission }))}
               >
-                <input 
-                  type="checkbox" 
-                  id="permission" 
-                  checked={formData.permission}
-                  readOnly
-                  className="mt-0.5 w-6 h-6 md:w-5 md:h-5 rounded-sm border-white/40 bg-transparent text-white focus:ring-white focus:ring-offset-0 focus:ring-offset-transparent cursor-pointer shrink-0 pointer-events-none" 
-                  style={{ accentColor:"white" }}
-                />
+                <div className={`mt-0.5 w-6 h-6 md:w-5 md:h-5 rounded-sm border-2 flex items-center justify-center shrink-0 transition-colors ${formData.permission ? 'bg-white border-white' : 'border-white/60 bg-transparent'}`}>
+                  {formData.permission && (
+                    <svg className="w-4 h-4 text-[#ff2a2a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
+                    </svg>
+                  )}
+                </div>
                 <span className="max-w-[280px] leading-snug pointer-events-none">
                   I give permission to contact me at this email address.
                 </span>

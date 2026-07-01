@@ -7,7 +7,7 @@ import project3Img from '../assets/project/project3.png';
 const Projects = () => {
   const projects = [
     {
-      title: "AN Spare's & Accessories",
+      title:"AN Spare's & Accessories",
       subtitle: 'Full-Stack Automotive E-Commerce Platform',
       description: 'Designed and developed a scalable full-stack e-commerce platform for bike spare parts, car accessories, lubricants, garage tools, and automotive products. The platform includes a powerful admin dashboard for managing products, categories, orders, customers, and website content.',
       image: project1Img, 
@@ -68,14 +68,14 @@ const Projects = () => {
           className="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8"
         >
           <div>
-            <span className="inline-block text-xs font-black text-[#ff2a2a] uppercase tracking-[0.15em] px-4 py-2 bg-red-50 border border-red-100 rounded-full mb-6">
+            <span className="inline-block text-xs  text-[#ff2a2a] uppercase tracking-[0.15em] px-4 py-2 bg-red-50 border border-red-100 rounded-full mb-6">
               Selected Works
             </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl  text-gray-900 tracking-tight">
               Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff2a2a] to-red-400">Projects</span>.
             </h2>
           </div>
-          <p className="text-gray-500 max-w-sm text-base md:text-lg font-medium leading-relaxed">
+          <p className="text-gray-500 max-w-sm text-base md:text-lg  leading-relaxed">
             A showcase of my recent full-stack applications, highlighting performance, design, and complex integrations.
           </p>
         </motion.div>
@@ -109,27 +109,27 @@ const Projects = () => {
                 {/* Content Section */}
                 <div className="w-full lg:w-[45%] flex flex-col justify-center">
                   <div className="mb-6">
-                    <h3 className="text-3xl md:text-4xl font-black text-gray-900 mb-3 tracking-tight group-hover:text-[#ff2a2a] transition-colors duration-300">
+                    <h3 className="text-3xl md:text-4xl  text-gray-900 mb-3 tracking-tight group-hover:text-[#ff2a2a] transition-colors duration-300">
                       {project.title}
                     </h3>
-                    <p className="text-[#ff2a2a] font-bold text-lg tracking-wide">
+                    <p className="text-[#ff2a2a]  text-lg tracking-wide">
                       {project.subtitle}
                     </p>
                   </div>
                   
-                  <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8 font-medium">
+                  <p className="text-gray-600 text-base md:text-lg leading-relaxed mb-8">
                     {project.description}
                   </p>
 
                   <div className="mb-8">
-                    <h4 className="text-xs font-black text-gray-400 uppercase tracking-widest mb-4">Key Features</h4>
+                    <h4 className="text-xs  text-gray-400 uppercase tracking-widest mb-4">Key Features</h4>
                     <ul className="space-y-3">
                       {project.features.map((feature, i) => (
                         <li key={i} className="flex items-start">
                           <svg className="w-5 h-5 text-[#ff2a2a] mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
                           </svg>
-                          <span className="text-gray-700 font-medium text-sm md:text-base">{feature}</span>
+                          <span className="text-gray-700  text-sm md:text-base">{feature}</span>
                         </li>
                       ))}
                     </ul>
@@ -137,7 +137,7 @@ const Projects = () => {
 
                   <div className="flex flex-wrap gap-2 mb-10">
                     {project.techStack.map((tech, i) => (
-                      <span key={i} className="px-3 py-1.5 text-xs font-bold text-gray-600 bg-gray-50 border border-gray-200 rounded-lg group-hover:border-gray-300 group-hover:bg-white group-hover:text-gray-900 hover:!text-[#ff2a2a] transition-all cursor-default shadow-sm hover:shadow-md">
+                      <span key={i} className="px-3 py-1.5 text-xs  text-gray-600 bg-gray-50 border border-gray-200 rounded-lg group-hover:border-gray-300 group-hover:bg-white group-hover:text-gray-900 hover:!text-[#ff2a2a] transition-all cursor-default shadow-sm hover:shadow-md">
                         {tech}
                       </span>
                     ))}
@@ -148,7 +148,7 @@ const Projects = () => {
                       href={project.link} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center px-8 py-4 bg-gray-900 text-white font-black rounded-xl hover:bg-[#ff2a2a] hover:shadow-[0_10px_25px_rgba(255,42,42,0.3)] hover:-translate-y-1 transition-all duration-300 w-full md:w-auto"
+                      className="inline-flex items-center justify-center px-8 py-4 bg-gray-900 text-white  rounded-xl hover:bg-[#ff2a2a] hover:shadow-[0_10px_25px_rgba(255,42,42,0.3)] hover:-translate-y-1 transition-all duration-300 w-full md:w-auto"
                     >
                       Explore Project
                       <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -1,6 +1,8 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap');
 @import "tailwindcss";
 
 @theme {
+  --font-sans: "Satoshi", sans-serif;
   --animate-float: float 6s ease-in-out infinite;
 
   @keyframes float {
@@ -34,4 +36,34 @@ body {
   80% { transform: translateY(0); opacity: 1; }
   90% { transform: translateY(-15px); opacity: 1; }
   100% { transform: translateY(0); opacity: 1; }
+}
+
+@layer base {
+  /* Body Text -> Satoshi Regular (400) */
+  body, p, span, div, a {
+    font-weight: 400 !important;
+  }
+
+  /* Hero Heading -> Satoshi Black (900) */
+  h1, #home h1, #hero h1 {
+    font-weight: 900 !important;
+  }
+
+  /* Section Heading -> Satoshi Bold (700) */
+  h2, h3, h4, h5, h6 {
+    font-weight: 700 !important;
+  }
+
+  /* Navbar -> Satoshi Medium (500) */
+  nav, nav *, header *, #navbar * {
+    font-weight: 500 !important;
+  }
+
+  /* Buttons -> Satoshi Medium (500) */
+  button, 
+  a[class*="px-"][class*="py-"], 
+  input[type="submit"], 
+  .btn {
+    font-weight: 500 !important;
+  }
 }

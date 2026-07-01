@@ -5,7 +5,7 @@ const TagCard = ({ number, title, text, className, aosDelay, aosType, pathLength
   const ref = useRef(null);
   const [isActive, setIsActive] = useState(false);
 
-  useMotionValueEvent(pathLength, "change", (latest) => {
+  useMotionValueEvent(pathLength,"change", (latest) => {
     if (!ref.current || !containerRef.current) return;
 
     const cardRect = ref.current.getBoundingClientRect();
@@ -28,7 +28,7 @@ const TagCard = ({ number, title, text, className, aosDelay, aosType, pathLength
   return (
     <div
       ref={ref}
-      data-aos={aosType || "fade-up"}
+      data-aos={aosType ||"fade-up"}
       data-aos-delay={aosDelay}
       className={`w-72 sm:w-80 rounded-[2rem] p-2 relative flex flex-col items-center hover:scale-[1.02] transition-all duration-700 z-10 ${className} ${isActive ? 'bg-[#ff2a2a] border-red-400 shadow-[0_20px_50px_rgba(255,42,42,0.4)]' : 'bg-white border border-gray-200 shadow-[0_15px_40px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)]'
         }`}
@@ -41,13 +41,13 @@ const TagCard = ({ number, title, text, className, aosDelay, aosType, pathLength
       {/* Inner container */}
       <div className={`w-full h-full rounded-[1.5rem] mt-8 p-8 flex flex-col min-h-[220px] transition-colors duration-700 ${isActive ? 'bg-red-700/50' : 'bg-[#f4f4f4]'
         }`}>
-        <span className={`text-xl font-bold mb-2 font-serif italic transition-colors duration-700 ${isActive ? 'text-red-200' : 'text-gray-400'
+        <span className={`text-xl  mb-2 font-serif italic transition-colors duration-700 ${isActive ? 'text-red-200' : 'text-gray-400'
           }`}>{number}</span>
 
-        <h3 className={`text-2xl font-black mb-3 tracking-tight transition-colors duration-700 ${isActive ? 'text-white' : 'text-gray-900'
+        <h3 className={`text-2xl  mb-3 tracking-tight transition-colors duration-700 ${isActive ? 'text-white' : 'text-gray-900'
           }`}>{title}</h3>
 
-        <p className={`text-sm leading-relaxed font-medium transition-colors duration-700 ${isActive ? 'text-red-100' : 'text-gray-500'
+        <p className={`text-sm leading-relaxed  transition-colors duration-700 ${isActive ? 'text-red-100' : 'text-gray-500'
           }`}>
           {text}
         </p>
@@ -61,7 +61,7 @@ const Expertise = () => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start center", "end center"]
+    offset: ["start center","end center"]
   });
 
   const pathLength = useSpring(scrollYProgress, { stiffness: 60, damping: 20, restDelta: 0.001 });
@@ -76,10 +76,10 @@ const Expertise = () => {
 
         {/* Header Content */}
         <div data-aos="fade-up" className="md:absolute top-10 left-0 md:w-[450px] z-20 mb-16 md:mb-0">
-          <div className="inline-block border border-gray-300 rounded-full px-5 py-1.5 text-sm text-gray-600 font-bold mb-8 shadow-sm bg-white">
+          <div className="inline-block border border-gray-300 rounded-full px-5 py-1.5 text-sm text-gray-600  mb-8 shadow-sm bg-white">
             My Expertise
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.1] mb-6 tracking-tight relative">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl  text-gray-900 leading-[1.1] mb-6 tracking-tight relative">
             Building Modern Digital Solutions with Code & AI
             {/* Hand-drawn arrow */}
             <svg className="absolute -bottom-10 right-10 w-12 h-12 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -87,7 +87,7 @@ const Expertise = () => {
               <path d="M4 4 Q 10 10 15 15 M 15 15 L 10 15 M 15 15 L 15 10" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </h2>
-          <p className="text-gray-500 text-base md:text-lg max-w-sm font-medium leading-relaxed">
+          <p className="text-gray-500 text-base md:text-lg max-w-sm  leading-relaxed">
             Combining full-stack development, artificial intelligence, and cloud technologies to create scalable and impactful digital experiences.
           </p>
         </div>

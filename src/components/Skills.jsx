@@ -50,14 +50,14 @@ const Skills = () => {
           className="mb-16 md:mb-20 text-center md:text-left flex flex-col md:flex-row md:items-end justify-between gap-8"
         >
           <div>
-            <span className="inline-block text-xs font-black text-[#ff2a2a] uppercase tracking-[0.15em] px-4 py-2 bg-red-50 rounded-full mb-6 border border-red-100 shadow-sm">
+            <span className="inline-block text-xs  text-[#ff2a2a] uppercase tracking-[0.15em] px-4 py-2 bg-red-50 rounded-full mb-6 border border-red-100 shadow-sm">
               Technical Stack
             </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl  text-gray-900 tracking-tight">
               Tools of the <span className="text-[#ff2a2a]">Trade</span>.
             </h2>
           </div>
-          <p className="text-gray-500 max-w-md text-base md:text-lg leading-relaxed font-medium">
+          <p className="text-gray-500 max-w-md text-base md:text-lg leading-relaxed">
             A curated selection of modern technologies and frameworks I use to build scalable, high-performance digital solutions.
           </p>
         </motion.div>
@@ -77,10 +77,10 @@ const Skills = () => {
               <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-40 transition-opacity duration-500 pointer-events-none" />
               
               <div className="relative z-10 mb-10">
-                <h3 className="text-2xl md:text-3xl font-black text-gray-900 mb-3 tracking-tight group-hover:text-[#ff2a2a] transition-colors duration-300">
+                <h3 className="text-2xl md:text-3xl  text-gray-900 mb-3 tracking-tight group-hover:text-[#ff2a2a] transition-colors duration-300">
                   {group.category}
                 </h3>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed font-medium max-w-sm">
+                <p className="text-gray-600 text-sm md:text-base leading-relaxed  max-w-sm">
                   {group.description}
                 </p>
               </div>
@@ -89,7 +89,7 @@ const Skills = () => {
                 {group.skills.map((skill, sIdx) => (
                   <span
                     key={sIdx}
-                    className="px-4 py-2 text-sm font-bold text-gray-700 bg-white/80 backdrop-blur-sm border border-white/40 shadow-sm rounded-xl hover:shadow-md hover:-translate-y-1 hover:text-[#ff2a2a] transition-all duration-300 cursor-default"
+                    className="px-4 py-2 text-sm  text-gray-700 bg-white/80 backdrop-blur-sm border border-white/40 shadow-sm rounded-xl hover:shadow-md hover:-translate-y-1 hover:text-[#ff2a2a] transition-all duration-300 cursor-default"
                   >
                     {skill}
                   </span>

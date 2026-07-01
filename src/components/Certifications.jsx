@@ -35,14 +35,14 @@ const Certifications = () => {
           className="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8"
         >
           <div>
-            <span className="inline-block text-xs font-black text-gray-400 uppercase tracking-[0.2em] mb-4">
+            <span className="inline-block text-xs  text-gray-400 uppercase tracking-[0.2em] mb-4">
               Achievements
             </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl  text-gray-900 tracking-tight">
               Licenses & <span className="text-[#ff2a2a] italic">Certifications</span>
             </h2>
           </div>
-          <p className="text-gray-500 max-w-sm text-base md:text-lg font-medium leading-relaxed">
+          <p className="text-gray-500 max-w-sm text-base md:text-lg  leading-relaxed">
             Professional qualifications and specialized training that validate my technical expertise.
           </p>
         </motion.div>
@@ -62,20 +62,20 @@ const Certifications = () => {
               <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#ff2a2a] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
               <div className="w-full lg:w-[45%] mb-4 lg:mb-0 pl-0 lg:pl-6 transition-all duration-300 group-hover:pl-4 lg:group-hover:pl-10">
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 group-hover:text-[#ff2a2a] transition-colors duration-300 tracking-tight">
+                <h3 className="text-2xl md:text-3xl  text-gray-900 group-hover:text-[#ff2a2a] transition-colors duration-300 tracking-tight">
                   {cert.title}
                 </h3>
               </div>
               
               <div className="w-full lg:w-[25%] mb-4 lg:mb-0 flex items-center">
-                <span className="text-sm font-bold text-gray-400 uppercase tracking-widest flex items-center gap-3">
+                <span className="text-sm  text-gray-400 uppercase tracking-widest flex items-center gap-3">
                   <span className="w-8 h-[2px] bg-gray-200 group-hover:bg-[#ff2a2a] transition-colors duration-300 hidden md:block"></span>
                   {cert.organization}
                 </span>
               </div>
               
               <div className="w-full lg:w-[30%]">
-                <p className="text-gray-500 text-sm md:text-base leading-relaxed font-medium">
+                <p className="text-gray-500 text-sm md:text-base leading-relaxed">
                   {cert.description}
                 </p>
               </div>
